@@ -1,10 +1,9 @@
 HoloGraphLibrary
 ================
-
 Fork of the HoloGraphLibrary by Daniel Nadeau
-#Additionnal features:
-*Deleted "org.jetbrains.annotations.NotNull" as not needed 
-*Added modification of fill color (holy moly!)
+# Additionnal features:
+* Deleted "org.jetbrains.annotations.NotNull" as not needed.
+* Added modification of fill color (holy moly!).
 
 
 
