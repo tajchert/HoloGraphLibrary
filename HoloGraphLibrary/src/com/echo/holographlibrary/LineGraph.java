@@ -50,6 +50,8 @@ public class LineGraph extends View {
     private boolean showHorizontalGrid = false;
 	private int gridColor = 0xffffffff;
 	
+	private int fillColor = Color.BLACK;
+	
 	public LineGraph(Context context){
 		this(context,null);
 	}
@@ -58,6 +60,10 @@ public class LineGraph extends View {
 		txtPaint.setColor(0xffffffff);
 		txtPaint.setTextSize(20);
 		txtPaint.setAntiAlias(true);
+	}
+	public void setFillColor(int color)
+	{
+		fillColor = color;
 	}
 	public void setGridColor(int color)
 	{
@@ -208,9 +214,9 @@ public class LineGraph extends View {
 				float minX = getMinX();
 				
 				if (lineCount == lineToFill){
-					paint.setColor(Color.BLACK);
-					paint.setAlpha(30);
-					paint.setStrokeWidth(2);
+					paint.setColor(fillColor);
+					paint.setAlpha(50);
+					paint.setStrokeWidth(10);
 					for (int i = 10; i-getWidth() < getHeight(); i = i+20){
 						canvas.drawLine(i, getHeight()-bottomPadding, 0, getHeight()-bottomPadding-i, paint);
 					}

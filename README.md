@@ -1,8 +1,14 @@
 HoloGraphLibrary
 ================
 
-Fork of the HoloGraphLibrary by Daniel Nadeau, with additionnal features
+Fork of the HoloGraphLibrary by Daniel Nadeau
+#Additionnal features:
+*Deleted "org.jetbrains.annotations.NotNull" as not needed 
+*Added modification of fill color (holy moly!)
 
+
+
+Rest is the same as oryginal:
 # Welcome
 
 This is a library written to allow beautiful graphs and charts to be easily incorporated into your Android application. Included are: 

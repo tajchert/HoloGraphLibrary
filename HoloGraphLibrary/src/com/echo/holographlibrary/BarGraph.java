@@ -30,7 +30,6 @@ import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -168,7 +167,10 @@ public class BarGraph extends View {
     }
 
     @Override
-    public boolean onTouchEvent(@NotNull MotionEvent event) {
+    public boolean onTouchEvent(MotionEvent event) {
+    	if(event==null){
+    		return false;
+    	}
 
         Point point = new Point();
         point.x = (int) event.getX();
